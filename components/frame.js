@@ -10,9 +10,9 @@ import { FrameImageNext } from "frames.js/render/next";
 import { FrameButton } from "frames.js";
 import { useFrame } from "frames.js/render/use-frame";
  
-export default function Page() {
+export default function Frame({url}) {
   // TODO: replace with your farcaster signer
-  const farcasterSigner: FarcasterSigner = {
+  const farcasterSigner = {
     fid: 1,
     status: 'approved',
     publicKey:
@@ -24,7 +24,7 @@ export default function Page() {
   const frameState = useFrame({
     // replace with your frame url
     homeframeUrl:
-      "https://fc-polls.vercel.app/polls/07158754-33f3-4ec0-b7d1-dd78828f8d42",
+      url,
     // corresponds to the name of the route for POST in step 3
     frameActionProxy: "/frames",
     // corresponds to the name of the route for GET in step 3
@@ -44,7 +44,6 @@ export default function Page() {
  
   return (
     <div className="w-[400px]">
-      
       <FrameUI frameState={frameState} theme={{}} FrameImage={FrameImageNext} />
     </div>
   );

@@ -1,0 +1,24 @@
+[
+    {
+     "name": "/trending-frames",
+      "url": "https://warpcast.com/~/channel/trending-frames"
+    },
+    {
+      "name": "/frames",
+      "url": "https://warpcast.com/~/channel/frames"
+    },
+    {
+      "name": "/dev",
+      "url": "https://warpcast.com/~/channel/dev"
+    },
+    {
+      "name": "/frames-dev",
+      "url": "https://warpcast.com/~/channel/frames-dev"
+    },
+    {
+      "name": "/mountains",
+      "url": "https://warpcast.com/~/channel/mountains"
+    }
+    
+
+  ]
