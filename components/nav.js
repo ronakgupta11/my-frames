@@ -28,10 +28,10 @@ export default function Nav() {
         <Navbar.Toggle />
       </div>
       <Navbar.Collapse>
-        <Navbar.Link href="#">Home</Navbar.Link>
+        <Navbar.Link href="/">Home</Navbar.Link>
         <Navbar.Link href="/explore">Explore</Navbar.Link>
-        <Navbar.Link href="#">Create</Navbar.Link>
-        <Navbar.Link href="#">Profile</Navbar.Link>
+        <Navbar.Link href="/create">Create</Navbar.Link>
+        <Navbar.Link href="/profile">Profile</Navbar.Link>
       </Navbar.Collapse>
     </Navbar>
   );

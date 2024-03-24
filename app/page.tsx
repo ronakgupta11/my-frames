@@ -9,7 +9,7 @@ import { signFrameAction, FarcasterSigner } from 'frames.js/render/farcaster'
 import { FrameImageNext } from "frames.js/render/next";
 import { FrameButton } from "frames.js";
 import { useFrame } from "frames.js/render/use-frame";
- 
+import FileUpload from "@/components/fileUpload";
 export default function Page() {
   // TODO: replace with your farcaster signer
   const farcasterSigner: FarcasterSigner = {
@@ -24,7 +24,7 @@ export default function Page() {
   const frameState = useFrame({
     // replace with your frame url
     homeframeUrl:
-      "https://fc-polls.vercel.app/polls/07158754-33f3-4ec0-b7d1-dd78828f8d42",
+    "https://my-first-frog-three.vercel.app/api/aZdKBByqLifo26i3gsyP",
     // corresponds to the name of the route for POST in step 3
     frameActionProxy: "/frames",
     // corresponds to the name of the route for GET in step 3
@@ -44,7 +44,7 @@ export default function Page() {
  
   return (
     <div className="w-[400px]">
-      
+
       <FrameUI frameState={frameState} theme={{}} FrameImage={FrameImageNext} />
     </div>
   );
