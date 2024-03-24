@@ -1,7 +1,7 @@
 "use client"
 import React, { useEffect, useState } from 'react'
 
-function page() {
+function Page() {
     const [data,setData]  = useState([])
     const profile = "0xD7D98e76FcD14689F05e7fc19BAC465eC0fF4161"
     useEffect(()=>{
@@ -30,4 +30,4 @@ return data?.frames
   )
 }
 
-export default page
+export default Page

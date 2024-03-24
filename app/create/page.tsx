@@ -4,7 +4,7 @@ import { Button, TextInput } from 'flowbite-react'
 import React, { useState } from 'react'
 import axios from "axios"
 
-function page() {
+function Page() {
     const [frameId,setFrameId] = useState("")
     const [hash,setHash] = useState("")
     const [page,setPages] = useState("")
@@ -32,7 +32,7 @@ const handleCreate = async()=>{
         <TextInput  className="max-w-60"onChange={(e)=>setReceiver(e.target.value)}/>
         <p>select images for your medium post or comic</p>
         <FileUpload setHash={setHash} setPages = {setPages}/>
-        
+
 <Button onClick={handleCreate}>Create Frame</Button>
 {created && <p>Successfully created frame </p>}
 { created && <p>{`https://my-first-frog-three.vercel.app/api/${frameId}`}</p>}
@@ -42,4 +42,4 @@ const handleCreate = async()=>{
   )
 }
 
-export default page
+export default Page
