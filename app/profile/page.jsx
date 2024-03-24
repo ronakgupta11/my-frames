@@ -20,7 +20,7 @@ return data?.frames
     d=>{
         return(
 
-            <a target='_blank' className='text-center m-2' href={`https://my-first-frog-three.vercel.app/api/${d}`}>
+            <a key={d} target='_blank' className='text-center m-2' href={`https://my-first-frog-three.vercel.app/api/${d}`}>
                 {d}
             </a>
         )
