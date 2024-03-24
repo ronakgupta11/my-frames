@@ -27,9 +27,12 @@ const handleCreate = async()=>{
     setCreated(true)
 }
   return (
-    <div>
-        <TextInput onChange={(e)=>setReceiver(e.target.value)}/>
+    <div className='flex flex-col space-y-4 items-center justify-center p-4'>
+        <p>enter receiver wallet address to receive stream</p>
+        <TextInput  className="max-w-60"onChange={(e)=>setReceiver(e.target.value)}/>
+        <p>select images for your medium post or comic</p>
         <FileUpload setHash={setHash} setPages = {setPages}/>
+        
 <Button onClick={handleCreate}>Create Frame</Button>
 {created && <p>Successfully created frame </p>}
 { created && <p>{`https://my-first-frog-three.vercel.app/api/${frameId}`}</p>}

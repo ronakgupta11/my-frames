@@ -15,13 +15,14 @@ return data?.frames
 
     },[])
      return (
-    <div>
+    <div className='flex flex-col items-center justify-center'>
 {data.map(
     d=>{
         return(
-            <p className='text-center m-2'>
+
+            <a target='_blank' className='text-center m-2' href={`https://my-first-frog-three.vercel.app/api/${d}`}>
                 {d}
-            </p>
+            </a>
         )
     }
 )}
